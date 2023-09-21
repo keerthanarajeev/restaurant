@@ -1,0 +1,248 @@
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;300;400;500&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@100;200&family=Passion+One:wght@400;700;900&family=Poppins:wght@200&family=Roboto+Slab:wght@300;400;500&family=Satisfy&family=Source+Code+Pro:ital,wght@1,200;1,300&family=Teko:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Passion One', cursive;
+    
+    
+}
+
+.frontpage
+{
+    background-image: url('https://grillhuset-bjuv.se/wp-content/uploads/2022/07/bg-header.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+   
+}
+
+.container
+{
+    
+    width: 100%;
+    height: 100vh;
+     position: relative;
+     background-color: black;
+      
+}
+
+
+nav
+{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 100;
+    height: 100px;
+    
+
+}
+nav .logo
+{
+    width: 180px;
+    margin-left: 3%;
+
+}
+nav ul li
+{
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+nav ul li a:hover, 
+nav ul li a.current
+{
+    color: rgb(202, 145, 31) ;
+}
+
+.home-content h1
+{
+    font-size: 70px;
+    color: white;
+    margin-top: 120px; 
+    margin-left: 45px;
+    letter-spacing: 3px;
+    
+}
+
+.home-content
+{    width: 600px;
+
+    text-align: justify;
+     text-justify: inter-word;
+}
+.home-content p
+{
+
+    color: white;
+    margin-left: 45px;
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+   
+    
+}
+
+.home button
+{
+    background-color: rgb(202, 145, 31);
+    width: 200px;
+    height: 45px;
+   margin-top: 40px;
+   margin-left: 45px;
+   border-radius: 5px;
+   border: none;
+   color: black;
+   font-weight: 500;
+   font-size: 25px;
+   letter-spacing: 2px;
+  
+}
+
+
+.special_dishes
+{
+    background: black;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+   
+   
+}
+
+.special_dishes .dish_content 
+{
+width: 700px;
+height: 160px;
+margin-left: 270px;
+background-color: black;
+
+
+
+padding: 10px;
+}
+
+.dish_content img 
+{
+    width: 8%; 
+    
+}
+
+.special_dishes .dish_content p{
+
+    line-height: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.special_dishes .dish_content h1
+{
+    font-size: 46px;
+}
+
+/* slider */
+
+.slider
+{
+    height: 350px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    /* place-items: center; */
+    overflow: hidden;
+}
+
+.slide-track
+{
+    display: flex;
+    height: 700px;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+    margin-top: 40px;
+   
+}
+.slide-track:hover
+{
+    animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide
+{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    perspective: 100px;
+
+}
+
+img
+{
+    width: 100%;
+    transition: transform 1%;
+}
+
+img:hover
+{
+    transform: translateZ(20px);
+}
+
+
+.about
+{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+}
+
+.about .aboutus
+{
+   padding-left: 50px;
+}
+
+.about .aboutus h1{
+    font-size: 50px;
+}
+
+.about .aboutus p{
+   line-height: 30px;
+   font-family: 'Roboto Slab', serif;
+   margin-top: 20px;
+}
+ .offer
+ {
+    width: 100%;
+    height: 50vh;
+    background: url("https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952509_1280.jpg");
+ }
+

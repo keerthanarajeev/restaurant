@@ -1,0 +1,775 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;300;400;500&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@100;200&family=Passion+One:wght@400;700;900&family=Poppins:wght@200&family=Roboto+Slab:wght@300;400;500&family=Satisfy&family=Source+Code+Pro:ital,wght@1,200;1,300&family=Teko:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Passion One', cursive;
+    
+    
+}
+
+.frontpage
+{
+    background-image: url('https://grillhuset-bjuv.se/wp-content/uploads/2022/07/bg-header.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+   
+}
+
+.container
+{
+    
+    width: 100%;
+    height: 100vh;
+     position: relative;
+     background-color: black;
+      
+}
+
+
+nav
+{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 100;
+    height: 100px;
+    
+
+}
+nav .logo
+{
+    width: 180px;
+    margin-left: 3%;
+
+}
+nav ul li
+{
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+nav ul li a:hover, 
+nav ul li a.current
+{
+    color: rgb(202, 145, 31) ;
+}
+
+.home-content h1
+{
+    font-size: 70px;
+    color: white;
+    margin-top: 120px; 
+    margin-left: 45px;
+    letter-spacing: 3px;
+    
+}
+
+.home-content
+{    width: 600px;
+
+    text-align: justify;
+     text-justify: inter-word;
+}
+.home-content p
+{
+
+    color: white;
+    margin-left: 45px;
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+   
+    
+}
+
+
+/* {
+ 
+   
+   border: none;
+   color: black;
+   font-weight: 500;
+   font-size: 25px;
+   letter-spacing: 2px;
+  
+} */
+.home a
+{
+width: 200px;
+height: 43px;
+margin-top: 30px;
+margin-left: 45px;
+display: block;
+padding-top: 9px;
+text-align: center;
+text-decoration: none;
+font-size: 20px;
+color: black;
+letter-spacing: 4px;
+border-radius: 5px;
+background-color: rgb(202, 145, 31) ;
+cursor: pointer;
+}
+
+.home a:hover
+{
+background-color: rgb(94, 96, 96);
+color: #fff;
+}
+
+
+/* Menu */
+
+.special_dishes
+{
+    background: black;
+    color: #fff;
+    text-align: center;
+    height: 120vh;
+   
+   
+}
+
+.special_dishes .dish_content 
+{
+width: 700px;
+height: 160px;
+margin-left: 270px;
+background-color: black;
+
+
+
+padding: 10px;
+}
+
+.dish_content img 
+{
+    width: 8%; 
+    
+}
+
+.special_dishes .dish_content p{
+
+    line-height: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.special_dishes .dish_content h1
+{
+    font-size: 46px;
+}
+
+/* slider */
+
+.slider
+{
+    height: 600px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    /* place-items: center; */
+    overflow: hidden;
+}
+
+.slide-track
+{
+    display: flex;
+    height: 700px;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+    margin-top: 40px;
+   
+}
+.slide-track:hover
+{
+    animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide
+{
+    height: 300px;
+    width: 250px;
+    /* display: flex;
+    align-items: center; */
+    padding: 20px;
+    perspective: 100px;
+    color: white;
+
+}
+/* .slide h4
+{
+   color: #fff;
+   font-size: 20px;
+   /* 2-top: 130px; 
+   padding-top: 20px;
+   padding-bottom: 20px;
+   text-align: center;
+} */
+
+
+.slide p
+{
+   padding: 25px; 
+   font-family: 'Roboto Slab', serif;
+}
+
+.slide h4{
+    font-size: 25px;
+}
+
+.slide h5{
+    font-size: 25px;
+    color: rgb(202, 145, 31);
+}
+
+img
+{
+    width: 100%;
+    transition: transform 1%;
+}
+
+img:hover
+{
+    transform: translateZ(20px);
+}
+
+/* about us */
+
+.about
+{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+}
+
+.about .aboutus
+{
+   padding-left: 50px;
+}
+
+.about .aboutus h1{
+    font-size: 50px;
+}
+
+.about .aboutus p{
+   line-height: 30px;
+   font-family: 'Roboto Slab', serif;
+   margin-top: 20px;
+}
+
+/* offer section */
+ .offer
+ {
+    width: 100%;
+    height: 40vh;
+    
+    background-size: cover;
+    position: relative;
+ }
+
+ .offer .text
+ {
+position: absolute;
+ padding: 25px;
+  top: 100px;
+  left: 16px;
+ }
+
+ .offer h1
+ {
+    color: #fff;
+    font-size: 50px;
+ }
+
+ /* .offer img
+ {
+   margin-top: 100px;
+ } */
+/* 
+ .offer button
+ {
+
+    background-color: rgb(202, 145, 31);
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    top: 120%;
+    left: 4%;
+    z-index: 2;
+   border-radius: 5px;
+   border: none;
+   color: black;
+   font-weight: 500;
+   font-size: 25px;
+   letter-spacing: 2px;
+  
+} */
+
+.offer a
+{
+position: absolute;
+width: 200px;
+height: 43px;
+margin-top: -120px;
+margin-left: 45px;
+display: block;
+padding-top: 9px;
+text-align: center;
+text-decoration: none;
+font-size: 20px;
+color: black;
+letter-spacing: 4px;
+border-radius: 5px;
+background-color: rgb(202, 145, 31) ;
+cursor: pointer;
+}
+
+.offer a:hover
+{
+background-color: rgb(94, 96, 96);
+color: #fff;
+}
+
+.best-chef
+{
+    height: 150vh;
+    width: 100%;
+    background: black;
+    color: white;
+    
+}
+
+.chef-img
+{
+    display: flex;
+    gap: 25px;
+    width: 90%;
+    height: 500px;
+    margin-left: 60px;
+   margin-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.chef-img h4
+{
+   padding: 25px; 
+   font-family: 'Roboto Slab', serif;
+}
+
+.chef-img p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.chef-img p{
+    font-size: 15px;
+    color: rgb(202, 145, 31);
+}
+
+.best-chef h1
+{
+   color: #fff;
+   font-size: 50px;
+   /* margin-top: 130px; */
+   padding-top: 200px;
+   text-align: center;
+}
+
+.best-chef p{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    line-height: 30px;
+} 
+.chef-cont
+{
+    width: 700px;
+    align-items: center;
+    margin-left: 270px;
+    margin-top: 40px;
+    
+}
+
+.menu
+{
+   width: 100%;
+   height: 200vh;
+   color: white;
+   
+  background: black;
+}
+ 
+.menu h1
+{
+   color: #fff;
+   font-size: 50px;
+   /* margin-top: 130px; */
+   padding-top: 100px;
+   text-align: center;
+}
+
+/* .menu button
+{
+
+   background-color: rgb(202, 145, 31);
+   width: 100px;
+   height: 45px;
+   margin-top: 80px;
+   margin-left: 20px;
+
+   
+   /* z-index: 2; */
+  /* border-radius: 5px;
+  border: none;
+  color: black;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 10px;
+  
+ 
+ 
+} */ 
+
+.menu .button-class
+{
+margin-left: 90px;
+padding: 10px;
+}
+
+.menu ul li
+{
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    margin-top: 60px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgb(202, 145, 31);
+   display: flex;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.all-section
+{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    padding: 30px 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    gap: 5px;
+
+}
+
+.product
+{
+    text-align: center;
+    padding: 10px;
+}
+
+.product p
+{
+   padding: 25px; 
+   font-family: 'Roboto Slab', serif;
+}
+
+.product h4{
+    font-size: 25px;
+}
+
+.product h5{
+    font-size: 25px;
+    color: rgb(202, 145, 31);
+}
+.product img
+{
+width: 100%;
+height: 250px;
+object-fit: cover;
+cursor: pointer;
+}
+
+.gallery
+{
+   width: 100%;
+   height: 150vh;
+   color: white;
+   
+  background: black;
+}
+
+.gallery h1
+{
+   color: #fff;
+   font-size: 50px;
+   /* margin-top: 130px; */
+   padding-top: 100px;
+   text-align: center;
+}
+
+.our-gallery
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 100px 45px;
+    /* grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    gap: 5px; */
+
+}
+.book-now
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+
+/* book a table */
+
+
+.book-a-table
+{
+    background: rgb(0, 0, 0);
+    /* position: relative; */
+    height: 100vh;
+    width: 100%;
+   
+}
+.book
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.book-a-table h1
+{
+   color: #fff;
+   font-size: 50px;
+   /* margin-top: 0px; */
+   /* padding-top: 10px; */
+   text-align: center;
+   
+}
+
+
+.hours
+{
+    width: 500px;
+    background: black;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: -220px;
+    
+}
+
+.hours h3
+{
+   color: #fff;
+   font-size: 30px;
+   margin-top: 130px;
+   /* padding-top: 10px; */
+   text-align: center;
+   
+   
+}
+
+.hours p
+{
+   padding: 15px; 
+   font-family: 'Roboto Slab', serif;
+   color: #fff;
+   text-align: justify;
+   
+}
+
+.form
+{
+    max-width: 650px;
+    padding: 20px;
+    margin: 0 28px;
+    background: black;
+    width: 500px;
+
+}
+
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+.input-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+
+}
+
+.input-box:nth-child(2n)
+{
+    justify-content: end;
+
+}
+
+.input-box label
+{
+width: 95%;
+font-weight: bold;
+margin: 5px 0;
+
+
+}
+
+.input-box input
+{
+height: 40px;
+width: 95%;
+padding: 0 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+outline: none;
+}
+
+.button-container
+{
+    margin: 15px 0;
+}
+
+.button-container button
+{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(202, 145, 31) ;
+    cursor: pointer;
+}
+
+table td
+{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+
+.contact
+{
+    background: black;
+    /* position: relative; */
+    height: 70vh;
+    width: 100%;
+    color: #fff;
+   
+}
+
+.contact h1
+{
+   color: #fff;
+   font-size: 47px;
+   padding-top: 50px;
+   text-align: center;
+   
+   
+}
+.contact-us
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 10px;
+   gap: 100px;
+}
+
+.reachus h4
+{
+    font-size: 25px;
+
+}
+
+.reachus p
+{
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.reachus .social i
+{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.footersec
+
+{
+    height: 80px; 
+    background-color: rgb(0, 0, 0);
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: x-small;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 30px;
+   
+}
