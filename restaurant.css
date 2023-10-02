@@ -146,7 +146,7 @@ color: #fff;
 
 
 
-/* Menu */
+/* Special dishes */
 
 .special_dishes
 {
@@ -225,22 +225,12 @@ padding: 10px;
 {
     height: 300px;
     width: 250px;
-    /* display: flex;
-    align-items: center; */
     padding: 20px;
     perspective: 100px;
     color: white;
 
 }
-/* .slide h4
-{
-   color: #fff;
-   font-size: 20px;
-   /* 2-top: 130px; 
-   padding-top: 20px;
-   padding-bottom: 20px;
-   text-align: center;
-} */
+
 
 
 .slide p
@@ -319,29 +309,6 @@ position: absolute;
     font-size: 50px;
  }
 
- /* .offer img
- {
-   margin-top: 100px;
- } */
-/* 
- .offer button
- {
-
-    background-color: rgb(202, 145, 31);
-    position: absolute;
-    width: 200px;
-    height: 45px;
-    top: 120%;
-    left: 4%;
-    z-index: 2;
-   border-radius: 5px;
-   border: none;
-   color: black;
-   font-weight: 500;
-   font-size: 25px;
-   letter-spacing: 2px;
-  
-} */
 
 .offer a
 {
@@ -430,6 +397,8 @@ color: #fff;
     
 }
 
+/* Menu */
+
 .menu
 {
    width: 100%;
@@ -444,69 +413,16 @@ color: #fff;
    color: #fff;
    font-size: 50px;
    /* margin-top: 130px; */
-   padding-top: 100px;
+   padding-top: 130px;
    text-align: center;
-}
+} 
 
-/* .menu button
-{
-
-   background-color: rgb(202, 145, 31);
-   width: 100px;
-   height: 45px;
-   margin-top: 80px;
-   margin-left: 20px;
-
-   
-   /* z-index: 2; */
-  /* border-radius: 5px;
-  border: none;
-  color: black;
-  font-weight: 500;
-  font-size: 25px;
-  letter-spacing: 2px;
-  padding: 10px;
-  
- 
- 
-} */ 
-
-.menu .button-class
-{
-margin-left: 90px;
-padding: 10px;
-}
-
-.menu ul li
-{
-    display: inline-block;
-    width: 100px;
-    height: 45px;
-    margin-top: 60px;
-    margin-left: 20px;
-    border-radius: 5px;
-    background-color: rgb(202, 145, 31);
-   display: flex;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    
-}
 
 .all-section
 {
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
-    padding: 30px 30px;
+    padding: 100px 30px;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
     gap: 5px;
@@ -554,7 +470,6 @@ cursor: pointer;
 {
    color: #fff;
    font-size: 50px;
-   /* margin-top: 130px; */
    padding-top: 100px;
    text-align: center;
 }
@@ -564,22 +479,14 @@ cursor: pointer;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 100px 45px;
-    /* grid-column-gap: 20px;
-    grid-row-gap: 30px;
-    gap: 5px; */
-
 }
 .book-now
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 
-
-
 /* book a table */
-
 
 .book-a-table
 {
@@ -791,31 +698,20 @@ footer p{
 @media (max-width: 600px )
 {
 
-.icons{display: inline-flex;}
-#check:checked ~ ul{display: none;} 
-.icons #close-icon{display: none;}
- #check:checked ~ .icons #close-icon{display: none;}
-
-nav ul{position: absolute; top: 100px; left: 0; width: 100%; height: 17.7rem; transition: 0.3s ease; background: rgba(0, 0,0,.90);}
-#check:checked~.navbar{height: 17.7rem;}
-nav ul li
-{
-    display: block;
-
-    font-size: 1.1rem;
-    margin: 1.5rem 0;
-    text-align: center;
-    
-}
-
-
-
-
-.frontpage{background-image: url('https://i.pinimg.com/236x/e6/65/8c/e6658c33233a44d1eb190d62ebf80597.jpg'); height: 100vh;}
+    .icons{display: inline-flex;}
+    #check:checked ~ ul{display: none;} 
+    .icons #close-icon{display: none;}
+    #check:checked ~ .icons #close-icon{display: none;}
+    /* .icons #close-icon{display: none;}
+     #check:checked~.icons #close-icon{display: block;} */
+    nav ul{position: absolute; top: 100px; left: 0; width: 100%; height: 17.7rem; transition: 0.3s ease; background: rgba(0,0,0,.90);}
+    #check:checked~.navbar{height: 17.7rem;}
+nav ul li{ display: block; font-size: 1.1rem; margin: 1.5rem 0; text-align: center;}
+.frontpage{background-image: url('https://img.freepik.com/premium-photo/delicious-burger-with-flying-ingredients-dark-background_189440-37.jpg'); height: 100vh;}
 .home-content {height: 90px;}
 .home-content h1{font-size: 30px; color: white; margin-left: 3%; letter-spacing: 2px;}
 .home-content .para{margin-left: 3%; margin-top: 10px; font-size: 16px; width: 55%; line-height: 25px;}
-.home a{width: 100px; height: 30px; padding-top: 8px; margin-top: 180px; margin-left: 4%; font-size: 10px; letter-spacing: 0px; border-radius: 0;}
+.home a{width: 40%; height: 40px; padding-top: 12px; margin-top: 190px; margin-left: 4%; font-size: 18px; letter-spacing: 3px; border-radius: 0;}
 .special_dishes{padding-top: 70px; height: auto;}
 .special_dishes .dish_content h1{font-size: 32px;text-align: left;}
 .special_dishes .dish_content {width: 95%; height: 160px; margin-left: 5%; padding: 10px; }
@@ -829,48 +725,43 @@ nav ul li
 .video iframe{display: none;}
 .about{height: auto;}
 .about .aboutus h1{font-size: 32px; }
-.about .aboutus .none{display: none;}
+/* .about .aboutus .none{display: none;} */
 .about .aboutus{width:95%; margin-left: -5%; text-align: justify; padding-top: 60px;}
 .offer{margin-top: 20%;}
 .offer a {width: 120px; height: 30px; margin-top: -50px; margin-left: 5%; padding-top: 10px; font-size: 10px;}
 .offer .text{padding: 0; top: 0px; left: 16px; padding-top: -23px; }
 .offer h1{ color: #fff; font-size: 20px; padding-top: -23px;}
-.best-chef h1{font-size: 40px; height: auto; margin-top: -300px;}
+.best-chef{height: 100vh; margin-top: -150px;}
+.best-chef h1{font-size: 40px; height: auto; padding-top: 10px;}
 .best-chef .chef-cont{margin-left: 5%; width: 350px; }
 .chef-img p{color: rgb(0, 0, 0);}
 .best-chef p {text-align: justify;}
-.chef-img{display: grid; grid-template-columns: 200px 200px; column-gap: 0; width: 90%;  margin-left: 1px; margin-top: 40px;}
-.chef-img img{width: 40%; };
+.chef-img{display: grid; grid-template-columns: 190px 190px; width: 90%; grid-row-gap: -50%;  margin-left: 1px; margin-top: -10px;}
+.chef-img img{width: 40%; }
 .chef-img p{display: none;}
+.chef-img h4{padding-top: 5px; font-size: 10px;}
 .chef-img i{display: none;};
-.best-chef .chef-img h4{font-size: 56px;}
+.best-chef .chef-img h4{padding-top: 5px; font-size: 10px;}
 .menu{height: auto;}
-.menu h1{margin-top: -320px; font-size: 40px;}
+.menu h1{padding-top:20px; font-size: 40px;}
 .menu .button-class{display: none;}
-.all-section{margin-left: 10%; height: auto; padding-top: 60px;}
+.all-section{margin-left: 15%; height: auto; padding-top: 60px;}
 .all-section .product img{width: 100%; height: 90%;}
 .all-section .product p{display: none;}
 .all-section{display: grid; grid-template-rows: 100px 100px; grid-template-columns: 100px 100px; column-gap: 30px;}
 .product h4{font-size: 9px;}
 .product h5{font-size: 9px;}
 .gallery{height: auto;}
+.gallery h1{font-size: 40px;}
+.book-a-table h1{font-size: 40px;}
 .book{display: block;}
 .form{max-width: 340px;}
 .hours{width: 340px; margin-left: 20px; margin-top: -120px;}
 .contact-us{display: block; margin-left: 10%; margin-top: 30px;}
 .contact-us .reachus h4{padding-top: 25px;}
 .contact-us .reachus .social{padding-top: 30px;}
-.contact h1
-{
-   
-   font-size: 30px;
-   padding-top: 50px;
-   text-align: center;
-   
-   
-}
-.contact{margin-top: 20%;
-}
+.contact h1{font-size: 40px; padding-top: 50px; text-align: center;}
+.contact{margin-top: 30%; height: auto;}
 .contact h4{font-size: 20px;}
 }
 
